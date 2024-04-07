@@ -9,15 +9,15 @@ script so that it fetches them from GitHub instead.
 
 ## Latest release
 
-* Release: `nix-2.22.0pre20240323_38ba96d`
-* Hydra eval: https://hydra.nixos.org/eval/1805180
+* Release: `nix-2.22.0pre20240403_50cb14f`
+* Hydra eval: https://hydra.nixos.org/eval/1805432
 
 ## Usage
 
 ### Systems
 
 ```sh
-sh <(curl -L https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.22.0pre20240323_38ba96d/install)
+sh <(curl -L https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.22.0pre20240403_50cb14f/install)
 ```
 
 ### GitHub Actions
@@ -36,7 +36,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: cachix/install-nix-action@v16
       with:
-        install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.22.0pre20240323_38ba96d/install
+        install_url: https://github.com/numtide/nix-unstable-installer/releases/download/nix-2.22.0pre20240403_50cb14f/install
     # Run the general flake checks
     - run: nix flake check
     # Verify that the main program builds
